@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Cartas Clash Royale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header id="nav">
+        <div id="logo"></div>
+        <div id="compra"></div>
+        <div id="login"></div>
+    </header>
+
+    <h1>CLASH ROYALE</h1>
+
+    <section id="caja">
+
+        <form id="buscador">
+            <input type="text" id="inputBuscador" placeholder="Nombre de la carta...">
+            <button id="buttonBuscador">Buscar</button>
+            <button id="buttonFiltrar">Filtrar</button>
+        </form>
+
+        <div id="cajaFiltro">
+            <form id="filtroForm">
+                <label for="initial">Letra inicial del nombre:</label>
+                <input type="text" id="initial" name="initial">
+                <label for="maxLevel">Nivel máximo:</label>
+                <input type="number" id="maxLevel" name="maxLevel">
+                <label for="evolution">Evolución:</label>
+                <select id="evolution" name="evolution">
+                  <option value="si">Sí</option>
+                  <option value="no">No</option>
+                </select>
+                <button type="submit">Filtrar</button>
+            </form>
+        </div>
+
+        <section id="resultado"></section>
+
+    </section>
+    <script src="styles.js"></script>
+</body>
+</html>
